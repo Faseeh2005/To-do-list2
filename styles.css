@@ -1,0 +1,150 @@
+body {
+    background-color: #1C1C1C;
+    font-family: "Segoe UI", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+
+.main-heading {
+    text-align: center;
+    color: #FFFDD0;
+    font-family: "Alfa Slab One", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 2.5rem;
+    margin-top: 30px;
+    letter-spacing: 2px;
+}
+
+
+.add-task {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.inp1 {
+    background-color: #2a2a2a;
+    padding: 12px;
+    color: #FFFDD0;
+    border: 2px solid #444;
+    border-radius: 8px;
+    font-size: 16px;
+    width: 250px;
+    transition: border-color 0.3s ease;
+}
+
+.inp1:focus {
+    outline: none;
+    border-color: #ae86e0;
+    box-shadow: 0 0 8px #ae86e0;
+}
+
+.btn1 {
+    background-color: #FFFDD0;
+    padding: 12px 18px;
+    margin-left: 12px;
+    color: #1C1C1C;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.btn1:hover {
+    background-color: #e6e6b3;
+    transform: scale(1.05);
+}
+
+
+.tasklist {
+    color: white;
+    margin-top: 40px;
+    padding: 20px;
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #2a2a2a;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.6);
+}
+
+.tasklist ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.tasklist li {
+    background-color: #333;
+    margin: 10px 0;
+    padding: 12px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: transform 0.2s ease;
+}
+
+.tasklist li:hover {
+    transform: translateX(5px);
+}
+
+
+.delete-btn {
+    background-color: #FF6961;
+    padding: 6px 10px;
+    border-radius: 5px;
+    margin-left: 10px;
+    border: none;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.delete-btn:hover {
+    background-color: #cc4c47;
+}
+
+.complete-btn {
+    background-color: #ae86e0;
+    padding: 6px 10px;
+    border-radius: 5px;
+    margin-left: 10px;
+    border: none;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.complete-btn:hover {
+    background-color: #8b5fc9;
+}
+
+
+.completed {
+    margin: 40px auto;
+    max-width: 500px;
+    padding: 20px;
+    background-color: #2a2a2a;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.6);
+    color: #00ff99;
+}
+
+.completed h2 {
+    text-align: center;
+    margin-bottom: 15px;
+    font-size: 1.5rem;
+}
+
+.completed ul li {
+    color: #aaa;
+    text-decoration: line-through;
+    background-color: #222;
+    padding: 10px;
+    border-radius: 8px;
+    margin: 8px 0;
+}
